@@ -16,15 +16,20 @@
 
 ### Create a new virtualenv
 
-`virtualenv -p $(which python3) [LOCATION OF ENVIRONMENT]`
+`virtualenv -p $(which python3) <LOCATION OF ENVIRONMENT>`
+
+activate:
+
+`source <LOCATION OF ENVIRONMENT>/bin/activate`
 
 example:
 
 `virtualenv -p $(which python3) ./memn2n_tf_python3_venv`
+`source ./memn2n_tf_python3_venv/bin/activate`
 
 ### Install requirements
 
-`pip3 install -r [PATH TO REQUIREMENTS FILE]`
+`pip3 install -r <PATH TO REQUIREMENTS FILE>`
 
 #### For GPU compatible environment:
 
@@ -36,7 +41,7 @@ example:
 
 ### Activate virtualenv
 
-`source [LOCATION OF ENVIRONMENT]/bin/activate`
+`source <LOCATION OF ENVIRONMENT>/bin/activate`
 
 example:
 
